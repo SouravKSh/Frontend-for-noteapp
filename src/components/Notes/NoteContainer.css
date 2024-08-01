@@ -1,0 +1,53 @@
+.container_notes {
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 10px;
+  min-height: 150px;
+  min-width: 180px;
+  max-height: 150px;
+  max-width: 180px;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  text-wrap: wrap;
+  background-color: white;
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+}
+.container_notes > h4 {
+  margin-bottom: 30px;
+  background-color: rgb(255, 234, 143);
+  word-wrap: break-word;
+}
+.container_notes > h5 {
+  background-color: white;
+  word-wrap: break-word;
+}
+
+.edit_icon {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.edit_icon > svg,
+.delete_icon > svg {
+  background: none;
+  fill: rgb(0, 0, 0);
+}
+.delete_icon {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

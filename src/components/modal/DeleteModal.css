@@ -1,0 +1,32 @@
+.modal_delete {
+  height: 20vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete_cancel_btn {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.delete_cancel_btn > button {
+  height: 40px;
+  width: 80px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.delete_cancel_btn :nth-child(1) {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+.delete_cancel_btn :nth-child(2) {
+  background-color: brown;
+  color: white;
+}

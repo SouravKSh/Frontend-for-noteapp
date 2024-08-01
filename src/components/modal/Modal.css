@@ -1,0 +1,61 @@
+.modal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.modal-content {
+  height: 60vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: black;
+}
+.edit_title {
+  padding: 5px;
+  height: 40px;
+  width: 400px;
+  background-color: white;
+  margin: 20px;
+  font-size: medium;
+  border: none;
+}
+.edit_desc {
+  padding: 5px;
+  height: 220px;
+  width: 400px;
+  background-color: white;
+  margin-bottom: 20px;
+  font-size: medium;
+  border: none;
+  resize: none;
+}
+.close_icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  fill: rgb(253, 135, 0);
+  cursor: pointer;
+}
+.update_Button {
+  font-size: 15px;
+  padding: 5px;
+  height: 40px;
+  width: 200px;
+  border: none;
+  background: rgb(253, 135, 0);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,65 @@
+.addNote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 45px 0;
+}
+.clickToAdd {
+  height: 40px;
+  width: 40%;
+  padding: 5px;
+  border: 0.5px solid grey;
+  cursor: text;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+.input {
+  height: fit-content;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid grey;
+  cursor: text;
+  border-radius: 8px;
+  background-color: white;
+}
+.title {
+  margin-bottom: 20px;
+  outline: none;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  background-color: white;
+}
+.desc {
+  outline: none;
+  height: fit-content;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  background-color: white;
+}
+.desc:empty:before,
+.title:empty:before {
+  content: attr(data-text);
+}
+.buttons {
+  width: 40%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.addBtn {
+  height: 40px;
+  width: 60px;
+  background-color: orange;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.closeBtn {
+  background-color: rgb(233, 230, 230);
+  border-radius: 5px;
+}
