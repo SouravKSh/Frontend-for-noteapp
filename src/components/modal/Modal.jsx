@@ -12,7 +12,9 @@ export default function Modal({ id, closeModal, fetchData }) {
   }, []);
 
   async function fetchNotebyId() {
-    const res = await fetch(`http://localhost:3000/${id}`);
+    const res = await fetch(
+      `https://backend-for-notes-app-5kfr.onrender.com/${id}`
+    );
     const data = await res.json();
     setEditTitle(data.title);
     setEditDesc(data.description);
@@ -20,16 +22,19 @@ export default function Modal({ id, closeModal, fetchData }) {
 
   async function updateNote() {
     try {
-      const res = await fetch(`http://localhost:3000/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          title: editTitle,
-          description: editDesc,
-        }),
-      });
+      const res = await fetch(
+        `https://backend-for-notes-app-5kfr.onrender.com/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            title: editTitle,
+            description: editDesc,
+          }),
+        }
+      );
       const data = await res.json();
       console.log(data);
       console.log("Record is updated");

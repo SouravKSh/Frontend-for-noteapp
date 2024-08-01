@@ -9,16 +9,21 @@ import { useState } from "react";
 function App() {
   const [notes, setNotes] = useState([]);
   const fetchData = async () => {
-    const response = await fetch("http://localhost:3000/");
+    const response = await fetch(
+      "https://backend-for-notes-app-5kfr.onrender.com/"
+    );
     const data = await response.json();
     console.log(data);
     setNotes(data);
   };
 
   const deleteNote = async (id) => {
-    const res = await fetch(`http://localhost:3000/${id}`, {
-      method: "DELETE",
-    });
+    const res = await fetch(
+      `https://backend-for-notes-app-5kfr.onrender.com/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
     const data = await res.json();
     console.log(data);
     fetchData();

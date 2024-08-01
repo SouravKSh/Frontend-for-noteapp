@@ -27,7 +27,7 @@ export default function AddNotes({ fetchData }) {
   async function addNotes(e) {
     e.preventDefault();
     try {
-      await fetch("http://localhost:3000/", {
+      await fetch("https://backend-for-notes-app-5kfr.onrender.com/", {
         method: "POST",
         body: JSON.stringify({
           title: title.trim(),
